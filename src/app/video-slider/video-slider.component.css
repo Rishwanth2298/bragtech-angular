@@ -1,0 +1,200 @@
+
+  .example-header-image {
+    background-image: url('https://bragtech.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGYnJhZ3RlY2guY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIwJTJGMDclMkY3MjI0MTEwM18xODI5NDg1MDYxNjc1ODhfNzg1ODg5MzcyNzU4MDgxNTM2MF9uLnBuZyZjYWNoZU1hcmtlcj0xNTk4NTQwOTcxLTI1MzY0JnRva2VuPTYxNTlmZDlhMWU4ZGU3OWY.q.png');
+    background-size: cover;
+  }
+
+  @media (min-width: 768px){
+.col-md-6{
+                display: inline-block;
+}
+  }
+
+  .home-contant{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+.main-head{font-size: 2.5rem;
+          line-height: 1;
+          font-weight: 600;
+}
+  
+.text-head{
+  font-size: 40px;
+  line-height: 1;
+  margin: 15px;
+}
+
+
+
+
+
+
+
+
+.card {
+    cursor: pointer
+}
+
+.hd {
+    font-size: 25px;
+    font-weight: 550
+}
+
+.card.hover,
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+}
+
+.img {
+    margin-bottom: 35px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222)
+}
+
+.card-title {
+    font-weight: 600
+}
+
+button.focus,
+button:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.ft {
+    margin-top: 25px
+}
+
+.chk {
+    margin-bottom: 5px
+}
+
+.rck {
+    margin-top: 20px;
+    padding-bottom: 15px
+}
+
+@media (min-width: 768px){
+  .card{
+                  display: inline-block;
+  }
+    }
+
+
+
+    .testimonial{
+      background: linear-gradient(-100deg,white 50%,deeppink 50%);
+      height: 70vh;
+    }
+
+    .container{
+      margin-top:0px;
+    }
+
+    .img-text{
+      width: 100%;
+      height: 300px;
+      display: block;
+      text-align: center;
+      padding: 40% 5%;
+      background: #0a66d6;
+      color: #fff;
+      border-radius: 15px;
+    }
+
+    .img-text h2{
+      font-size: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .img-text p{
+      font-size: 14px;
+    }
+
+    .single-box{
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .img-area{
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border: 5px solid #fff;
+      overflow: hidden;
+      top: 15px;
+      left: 130px;
+      border-radius: 50%;
+    }
+
+    
+.img-area img {
+  width: 100%;
+}
+.carousel-indicators{
+  left: 0;
+  top: auto;
+  bottom: -70px;
+}
+
+.carousel-indicators li {
+  background: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 1px;
+}
+.carousel-indicators .active {
+  background: rgb(34, 40, 90);
+}
+
+@media (min-width: 768px){
+  .img-area{
+    left: 115px;
+  }
+}
+@media (min-width: 500px){
+  .img-area{
+    left: 233px;
+  }
+}
+@media (min-width: 800px){
+  .img-area{
+    left: 76px;
+  }
+}
+@media (min-width: 950px){
+  .img-area{
+    left: 144px;
+  }
+}
+
+
+.custom-shape-divider-top-1617001580 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1617001580 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1617001580 .shape-fill {
+  fill: #1C79BB;
+}
+
+
+
+
+
+.divide{
+  margin: 100px 0px;
+}

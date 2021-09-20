@@ -1,0 +1,125 @@
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-height: 480px;
+    height: 80vh;
+    max-height: 560px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    z-index: -1;
+    transform: skewY(
+8deg
+);
+    transform-origin: 100%;
+}
+
+section#intro {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 900px;
+    height: 480px;
+    margin: 0 auto -32px;
+    padding: 48px 0 0;
+    color: #fff;
+}
+
+section#intro .hero-logo {
+    display: flex;
+}
+
+section#intro .hero-logo img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 8px;
+    max-width: none;
+    padding: 0;
+    filter: drop-shadow(0 2px 2px rgba(10,16,20,.24));
+}
+
+section#intro .homepage-container {
+    width: 100%;
+    max-width: 1040px;
+    margin: -7% auto 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section#intro .hero-headline {
+    font-size: 40px;
+    font-size: 3rem;
+    line-height: 64px;
+    line-height: 6.4rem;
+    font-weight: 500;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.button.hero-cta {
+    padding: 2px 34px 0;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 40px;
+    line-height: 4rem;
+    background-color: #fff;
+    border-radius: 48px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button-style{
+    padding: 0px 40px;
+    border-radius: 20px;
+    color: blue;
+
+}
+
+@media (max-width: 780px) 
+{
+    section#intro {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 100vw;
+        padding: 40px 0 32px;
+                }
+    .hero {
+        max-height: 486px;
+        padding-top: 40px;
+        transform: none;
+    }
+    section#intro .hero-logo {
+                                justify-content: center;
+                                }
+    section#intro .hero-logo img {
+                                width: 150px;
+                                height: 150px;
+                                }
+    section#intro .homepage-container {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 100%;
+                                max-width: 100%;
+                                padding: 0;
+                                        }
+    section#intro .hero-headline {
+                                text-align: center;
+                                
+                                font-size: 2rem;
+                                line-height: 64px;
+                                line-height: 2.4rem;
+                                font-weight: 500;
+                                margin: 32px 0;
+                                        }   
+                                                                  
+}

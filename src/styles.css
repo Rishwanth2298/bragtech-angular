@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+* ,body { margin: 0; font-family: 'Poppins', sans-serif;}
+p {font-size: 14px;line-height:2; font-family: 'Poppins', sans-serif;}
+h1,h2,h3,h4,h5,h6{font-family: 'Poppins', sans-serif;}
+
+
+  .hero-image {
+  background-image:url("assets/laptop-background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  
+    position: relative;
+    top: 30%;
+    color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: rgb(32, 73, 126);
+  color: white;
+}
+
+.mat-toolbar.mat-primary {
+  background: #060e16;
+  color: #f44336;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+@media(min-width:798px){
+  .hero-text{
+    margin-left: 350px;
+  }
+}

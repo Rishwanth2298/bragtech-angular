@@ -1,0 +1,22 @@
+.text-head{
+    font-size: 40px;
+    line-height: 1;
+    margin: 15px;
+}
+
+.smo-contact
+{
+    background-color: rgb(235, 238, 238);
+    
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+.smo-contact:hover{
+    
+    background-color: #373635;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  color: white;
+}

@@ -1,0 +1,93 @@
+<style>
+  .active{border-bottom:4px solid #e85959;
+    color:#e85959;
+    }
+   
+</style>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+  [ngClass]="{hidden:!(isHandset$ | async) === true}"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar color="primary"> <a href="#">
+      <img [src]="'assets/brag-logo.png'" height="30px"  width="30px" alt=""></a></mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" routerLinkActive="active"><span style="padding-right: 5px;color: #e85959;" class="material-icons">
+        home
+        </span>HOME</a>
+      <a mat-list-item routerLink="/about" routerLinkActive="active"><span style="padding-right: 5px;color:rgb(29, 27, 58)" class="material-icons">
+        info
+        </span>ABOUT</a>
+      
+      <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="padding-right: 5px;color: rgb(116, 16, 16);" class="material-icons">
+              miscellaneous_services
+              </span>
+            SERVICES
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+        <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/seo" routerLinkActive="active">SEO</a> <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/smo" routerLinkActive="active">SMO & SMM</a> <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/works" routerLinkActive="active">SMM WORKS</a> <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/digitalmarketing" routerLinkActive="active">DIGITAL MARKETING</a> <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/website-developement" routerLinkActive="active">WEBSITE DEVELOPMENT</a> <mat-divider></mat-divider>
+        <a mat-list-item routerLink="/google-search-result" routerLinkActive="active">GOOGLE RESULT</a>
+        <mat-divider></mat-divider>
+      </mat-expansion-panel>
+      <a mat-list-item routerLink="/contact-us" routerLinkActive="active"><span style="padding-right: 5px;color: rgb(25, 65, 65);" class="material-icons">
+        contact_phone
+        </span>CONTACT</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      
+      <span><a href="#"><img [src]="'assets/brag-logo.png'" height="60px"  width="60px" alt=""></a></span>
+      <span class="example-spacer"></span>
+
+    
+     <a id="navsitems" mat-list-item class="text-white navnewitems middle" style="font-size: 15px; padding:10px; list-style-type: none;text-decoration: none;" routerLink="/" routerLinkActive="active">HOME</a>
+   <a id="navsitems" mat-list-item class="text-white navnewitems" style="font-size: 15px; padding:10px; list-style-type: none;text-decoration: none;" routerLink="/about" routerLinkActive="active">ABOUT</a>
+
+     <a id="navsitems" mat-list-item class="text-white navnewitems" style="font-size: 15px; padding:8px; list-style-type: none;text-decoration: none;" routerLink="/services" routerLinkActive="active"> 
+             <button mat-flat-button [matMenuTriggerFor]="menu" style="background: #060e16;
+             color: #fff;
+         ">SERVICES<span class="material-icons">
+              arrow_drop_down
+              </span></button>
+             <mat-menu #menu="matMenu">
+              <a routerLink="/seo" style="text-decoration: none;"><button mat-menu-item>SEO</button></a>
+              <a routerLink="/smo" style="text-decoration: none;"><button mat-menu-item>SMO & SMM</button></a>
+              <a routerLink="/works" style="text-decoration: none;"><button mat-menu-item>SMM WORKS</button></a>
+              <a routerLink="/digitalmarketing" style="text-decoration: none;"><button mat-menu-item>DIGITAL MARKETING</button></a>
+              <a routerLink="/website-developement" style="text-decoration: none;"><button mat-menu-item>WEBSITE DEVELOPMENT</button></a>
+              <a routerLink="/google-search-result" style="text-decoration: none;"><button mat-menu-item>GOOGLE RESULT</button></a>
+            </mat-menu>
+      </a>
+
+     <a id="navsitems" mat-list-item class="text-white navnewitems  " style="font-size: 15px; padding:10px; list-style-type: none;text-decoration: none;" routerLink="/contact-us" routerLinkActive="active">CONTACT</a>
+     <button
+     type="button"
+     aria-label="Toggle sidenav"
+     mat-icon-button
+     (click)="drawer.toggle()"
+     *ngIf="isHandset$ | async">
+     <mat-icon aria-label="Side nav toggle icon" style="font-size: 31px;">menu_open</mat-icon>
+   
+   </button>&nbsp;&nbsp;&nbsp;
+   <a><button mat-flat-button class="third" (click)="openDialog()">ENQUIRY !</button></a>
+    </mat-toolbar>
+   
+
+    <ng-content></ng-content>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
