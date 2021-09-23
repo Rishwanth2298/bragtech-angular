@@ -12,7 +12,7 @@
     <!-- Name -->
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Name</mat-label>
-      
+      <br>
       <input name="name" [(ngModel)]="userModel.name" [formControl]="nameFormControl" placeholder="Your Sweet Name" matInput required>
       <mat-error *ngIf="nameFormControl.hasError('name')">
         Please give us your <b>Sweet Name</b>
@@ -23,7 +23,7 @@
     </mat-form-field>
   
     <!-- Email -->
-    
+    <br>
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Email</mat-label>
       
@@ -37,7 +37,7 @@
     </mat-form-field>
   
     <!-- Mobile -->
-    
+    <br>
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Mobile Number</mat-label>
       <input name="phone" ngModel matInput required type="text" placeholder="Valid 11 Digit Mobile.No" matInput #input  placeholder="Your Valid Mobile.No"  [formControl]="phoneFormControl">
@@ -49,12 +49,13 @@
        Mobile Number is <strong>required</strong>
       </mat-error>
     </mat-form-field>
-  
+  <br>
     <!-- Website url -->
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Website URL (optional)</mat-label>
-      <input name="website" matInput [(ngModel)]="userModel.website" placeholder="Your Website URL" [formControl]="websiteFormControl" >
+      <input name="website" matInput [(ngModel)]="userModel.website" placeholder="Your Website URL" [formControl]="websiteFormControl">
     </mat-form-field>
+    <br>
     <!-- Message -->
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Requirement</mat-label>
@@ -67,7 +68,7 @@
       </mat-error>
     </mat-form-field>
   
-  
+  <br>
     <!-- Send button -->
     <button class="btn  btn-block hoverable" mdbWavesEffect style="border-radius:10px;border:2px solid blue" name="submit" type="submit" [disabled]="emailFormControl.invalid || nameFormControl.invalid || phoneFormControl.invalid || messageFormControl.invalid || loading" (click)="register()">{{buttonText}}</button>
    

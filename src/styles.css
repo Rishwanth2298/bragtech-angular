@@ -190,7 +190,7 @@ div[layout=row] {
           font-size: 40px !important;
           margin-bottom: 15px !important
       }
-     
+     .mat-typography{background-color: #fff;}
       
       .example-full-width {
           width: 100%;
@@ -276,6 +276,9 @@ a.middle:before {
 
 .mat-drawer, .mat-drawer.mat-drawer-push{background-color: #fff}
 
-
+.input{border:1px solid #3e3e3e;
+       padding: 8px; 
+       margin:5px;
+        }
 
 
