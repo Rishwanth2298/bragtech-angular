@@ -276,9 +276,10 @@ a.middle:before {
 
 .mat-drawer, .mat-drawer.mat-drawer-push{background-color: #fff}
 
-.input{border:1px solid #3e3e3e;
+input{border:1px solid #3e3e3e;
        padding: 8px; 
        margin:5px;
+       border-radius: 5px;
         }
 
 
