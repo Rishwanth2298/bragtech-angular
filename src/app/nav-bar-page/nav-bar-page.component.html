@@ -6,7 +6,7 @@
 </style>
 
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
+  <mat-sidenav #drawer style="background-color: #fff;" class="sidenav" fixedInViewport
   [ngClass]="{hidden:!(isHandset$ | async) === true}"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
