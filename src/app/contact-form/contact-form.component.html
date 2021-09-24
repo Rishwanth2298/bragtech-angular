@@ -13,7 +13,10 @@
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Name</mat-label>
       <br>
-      <input name="name" [(ngModel)]="userModel.name" [formControl]="nameFormControl" placeholder="Your Sweet Name" matInput required>
+      <input style="border:1px solid #3e3e3e;
+      padding: 8px; 
+      margin:5px;
+      border-radius: 5px;" name="name" [(ngModel)]="userModel.name" [formControl]="nameFormControl" placeholder="Your Sweet Name" matInput required>
       <mat-error *ngIf="nameFormControl.hasError('name')">
         Please give us your <b>Sweet Name</b>
       </mat-error>
