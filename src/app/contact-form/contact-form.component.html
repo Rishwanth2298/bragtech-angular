@@ -13,10 +13,7 @@
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Name</mat-label>
       <br>
-      <input style="border:1px solid #3e3e3e;
-      padding: 8px; 
-      margin:5px;
-      border-radius: 5px;" name="name" [(ngModel)]="userModel.name" [formControl]="nameFormControl" placeholder="Your Sweet Name" matInput required>
+      <input style="border:1px solid #3e3e3e;padding: 8px;margin:5px;border-radius: 5px;" name="name" [(ngModel)]="userModel.name" [formControl]="nameFormControl" placeholder="Your Sweet Name" matInput required>
       <mat-error *ngIf="nameFormControl.hasError('name')">
         Please give us your <b>Sweet Name</b>
       </mat-error>
@@ -30,7 +27,7 @@
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Email</mat-label>
       
-      <input name="email" type="email" placeholder="Valid Email Id" matInput required [(ngModel)]="userModel.email" [formControl]="emailFormControl">
+      <input style="border:1px solid #3e3e3e;padding: 8px; margin:5px;border-radius: 5px;" name="email" type="email" placeholder="Valid Email Id" matInput required [(ngModel)]="userModel.email" [formControl]="emailFormControl">
       <mat-error *ngIf="emailFormControl.hasError('email')">
         Please enter a valid email address
       </mat-error>
@@ -43,7 +40,7 @@
     <br>
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Mobile Number</mat-label>
-      <input name="phone" ngModel matInput required type="text" placeholder="Valid 11 Digit Mobile.No" matInput #input  placeholder="Your Valid Mobile.No"  [formControl]="phoneFormControl">
+      <input style="border:1px solid #3e3e3e;padding: 8px; margin:5px;border-radius: 5px;" name="phone" ngModel matInput required type="text" placeholder="Valid 11 Digit Mobile.No" matInput #input  placeholder="Your Valid Mobile.No"  [formControl]="phoneFormControl">
       <mat-hint align="end">{{input.value?.length || 0}}/11</mat-hint>
       <mat-error *ngIf="phoneFormControl.hasError('phone')">
         Please enter a valid 11 digit <b>Mobile Number</b>
@@ -54,15 +51,16 @@
     </mat-form-field>
   <br>
     <!-- Website url -->
+    
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Website URL (optional)</mat-label>
-      <input name="website" matInput [(ngModel)]="userModel.website" placeholder="Your Website URL" [formControl]="websiteFormControl">
+      <input style="border:1px solid #3e3e3e;padding: 8px; margin:5px;border-radius: 5px;" name="website" matInput [(ngModel)]="userModel.website" placeholder="Your Website URL" [formControl]="websiteFormControl">
     </mat-form-field>
     <br>
     <!-- Message -->
     <mat-form-field appearance="fill" class="example-full-width">
       <mat-label>Requirement</mat-label>
-      <textarea name="message" [(ngModel)]="userModel.message" placeholder="Your Requirement" matInput required [formControl]="messageFormControl"></textarea>
+      <textarea style="border:1px solid #3e3e3e;padding: 8px; margin:5px;border-radius: 5px;" name="message" [(ngModel)]="userModel.message" placeholder="Your Requirement" matInput required [formControl]="messageFormControl"></textarea>
       <mat-error *ngIf="messageFormControl.hasError('message')">
         Write your message lessthan 500 letters.
       </mat-error>
