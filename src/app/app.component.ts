@@ -47,7 +47,7 @@ injectScripts()
     gtag('config', 'UA-206690540-1');
     `;
     this.renderer.appendChild(this._document.body, gtagInitScript);
-}
+ }
   ngOnInit(): void {
     this.wowService.init();
 
