@@ -6,7 +6,7 @@ import { User } from './user';
   providedIn: 'root'
 })
 export class EnrollmentService {
-_url='https://brag-tech.herokuapp.com/';
+_url='https://brag-tech.herokuapp.com/enroll';
   constructor(private _http:HttpClient) { }
 
   enroll(user:User) {
